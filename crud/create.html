@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Создать</title>
+    <link rel="stylesheet" href="../css/crud.css">
+</head>
+<body>
+    <form action="crud.php" method="post">
+        <label>Логин</label>
+        <input type="text" name="login" placeholder="Введите свой логин" pattern="[a-zA-Z0-9_]+[^\s]" required>
+        <label>Пароль</label>
+        <input type="password" name="password" placeholder="Введите пароль" required>
+        <label>Почта</label>
+        <input type="email" name="email" placeholder="Введите адрес своей почты" pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}" required>
+        <label>ФИО</label>
+        <input type="text" name="name" placeholder="Введите своё полное имя" minlength="2" pattern="[a-zа-яA-ZА-Я]+" required>
+        <button type="submit" name="create">Создать</button>
+    </form>
+  
+</body>    
+</html>
